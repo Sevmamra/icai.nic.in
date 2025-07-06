@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICAI - Foundation Result</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #0066cc;
+        }
+        h1 {
+            color: #0066cc;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #333;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
+        }
+        .form-section {
+            margin: 25px 0;
+        }
+        .form-title {
+            font-size: 18px;
+            color: #0066cc;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .captcha-box {
+            background: #f0f0f0;
+            padding: 8px;
+            display: inline-block;
+            margin: 10px 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .clear-btn {
+            background: #f0f0f0;
+            color: #333;
+        }
+        .submit-btn {
+            background: #0066cc;
+            color: white;
+        }
+        .nav-buttons {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .home-btn {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+        .disclaimer {
+            font-size: 11px;
+            margin-top: 20px;
+            color: #666;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Institute of Chartered Accountants of India</h1>
+            <h2>Examination Results, May 2025</h2>
+        </header>
+        
+        <hr>
+        
+        <div class="form-section">
+            <div class="form-title">Foundation - Result</div>
+            <p>Enter your 6 Digit Roll Number to check your results</p>
+            
+            <form action="result.html" method="GET">
+                <div class="form-group">
+                    <label for="rollno">Roll No.</label>
+                    <input type="text" id="rollno" name="rollno" maxlength="6">
+                </div>
+                
+                <div class="form-group">
+                    <label for="regno">Registration No.</label>
+                    <input type="text" id="regno" name="regno">
+                </div>
+                
+                <div class="form-group">
+                    <p>Enter the text as shown in the below box</p>
+                    <div class="captcha-box">jvgp jp</div>
+                    <input type="text" name="captcha" required>
+                </div>
+                
+                <div class="button-group">
+                    <button type="reset" class="clear-btn">CLEAR</button>
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </div>
+            </form>
+            
+            <div class="nav-buttons">
+                <a href="index.html" class="home-btn">Home</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p><strong>Hosted by National Informatics Centre</strong></p>
+            <div class="disclaimer">
+                <p>Disclaimer: The result given is correct at the time of release of the result by the institute which accepts no responsibility thereafter for errors or omissions caused as a result of their transmission via the Internet or their downloading or printing by the user. No material from this web can be copied, reproduced, published, undo-ended, posted, transmitted, distributed or dealt with in any manner, unless expressly authorized. Users are not permitted to change, modify or prepare derivative works from the content of this site. For any clarification / confirmation please address your enquiries to Joint Secretary (Examinations). The Institute of Chartered Accountants of India, "ICAI BHAWAY," Post Box No. 7112, Indagrastiba Marg, New Delhi - 110 002</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
