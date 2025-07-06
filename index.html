@@ -4,132 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICAI Examination Results</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
     <style>
         body {
-            background: url('assets/images/bg-home.jpg') no-repeat center center fixed;
-            background-size: cover;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        
-        .exam-section {
+        h1 {
+            color: #0066cc;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #0066cc;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
             margin: 25px 0;
         }
-        
-        .section-title {
-            background-color: #003366;
-            color: white;
-            padding: 10px 15px;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 3px;
-            margin-bottom: 15px;
-        }
-        
-        .exam-item {
-            margin-bottom: 15px;
-            padding: 10px;
-            border-left: 4px solid #003366;
-            background-color: rgba(255,255,255,0.7);
-            transition: all 0.3s ease;
-        }
-        
-        .exam-item:hover {
-            background-color: rgba(255,255,255,0.9);
-            transform: translateX(5px);
-        }
-        
-        .exam-name {
-            font-weight: bold;
-            color: #003366;
+        h3 {
+            color: #0066cc;
+            background-color: #f0f7ff;
+            padding: 8px 12px;
             font-size: 16px;
+            margin: 20px 0 15px 0;
+            border-left: 4px solid #0066cc;
         }
-        
-        .exam-date {
-            font-style: italic;
-            color: #555;
+        h4 {
+            color: #333;
+            font-size: 15px;
+            margin: 12px 0 5px 20px;
+        }
+        em {
+            color: #666;
             font-size: 14px;
+            margin-left: 20px;
+            display: block;
         }
-        
         .disclaimer {
             font-size: 11px;
-            line-height: 1.4;
             color: #666;
-            margin-top: 30px;
-            padding: 15px;
-            background-color: rgba(255,255,255,0.8);
-            border-top: 1px solid #ddd;
+            margin-top: 40px;
+            line-height: 1.4;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="assets/images/logo.png" alt="ICAI Logo" class="logo">
-            <h1>The Institute of Chartered Accountants of India</h1>
-            <h2>Examination Results</h2>
-        </div>
-        
-        <div class="exam-section">
-            <div class="section-title">CHECK RESULTS</div>
-            
-            <a href="form.html" class="exam-link">
-                <div class="exam-item">
-                    <span class="exam-name">Foundation: May 2025</span><br>
-                    <span class="exam-date">Announced on 06th July 2025</span>
-                </div>
-            </a>
-            
-            <a href="form.html" class="exam-link">
-                <div class="exam-item">
-                    <span class="exam-name">Final: May 2025</span><br>
-                    <span class="exam-date">Announced on 06th July 2025</span>
-                </div>
-            </a>
-            
-            <a href="form.html" class="exam-link">
-                <div class="exam-item">
-                    <span class="exam-name">Intermediate Examination: May 2025</span><br>
-                    <span class="exam-date">Announced on 06th July 2025</span>
-                </div>
-            </a>
-            
-            <a href="form.html" class="exam-link">
-                <div class="exam-item">
-                    <span class="exam-name">Intermediate Examination - UNITS: May 2025</span><br>
-                    <span class="exam-date">Announced on 06th July 2025</span>
-                </div>
-            </a>
-        </div>
-        
-        <div class="exam-section">
-            <div class="section-title">CHECK MERIT LIST</div>
-            
-            <a href="form.html" class="exam-link">
-                <div class="exam-item">
-                    <span class="exam-name">Foundation: May 2025</span><br>
-                    <span class="exam-date">Announced on 06th July 2025</span>
-                </div>
-            </a>
-            
-            <a href="form.html" class="exam-link">
-                <div class="exam-item">
-                    <span class="exam-name">Final: May 2025</span><br>
-                    <span class="exam-date">Announced on 06th July 2025</span>
-                </div>
-            </a>
-            
-            <a href="form.html" class="exam-link">
-                <div class="exam-item">
-                    <span class="exam-name">Intermediate Examination: May 2025</span><br>
-                    <span class="exam-date">Announced on 06th July 2025</span>
-                </div>
-            </a>
-        </div>
-        
-        <div class="disclaimer">
-            <p><strong>Hosted by National Informatics Centre</strong></p>
-            <p>Disclaimer: The result given is correct at the time of release of the result by the Institute which accepts no responsibility thereafter for errors or omissions caused as a result of their transmission via the Internet or their downloading or printing by the user. No material from this web site can be copied, reproduced, published, uploaded, posted, transmitted or distributed or dealt with in any manner, unless expressly authorized. Users are not permitted to change, modify or prepare derivative works from the content of this site. For any distribution / confirmation please address your enquiries to Joint Secretary (Examinations). The Institute of Chartered Accountants of India, "ICAI BHWNY", Port Bloq No. 7112, Indeprechina Marg, New Delhi - 110 002</p>
-        </div>
+    <h1>The Institute of Chartered Accountants of India</h1>
+    <h2>Examination Results</h2>
+    
+    <hr>
+    
+    <h3>CHECK RESULTS</h3>
+    
+    <h4>Foundation : May 2025</h4>
+    <em>Announced on 06th July 2025</em>
+    
+    <h4>Final : May 2025</h4>
+    <em>Announced on 06th July 2025</em>
+    
+    <h4>Intermediate Examination : May 2025</h4>
+    <em>Announced on 06th July 2025</em>
+    
+    <h4>Intermediate Examination - UNITS : May 2025</h4>
+    <em>Announced on 06th July 2025</em>
+    
+    <h3>CHECK MERIT LIST</h3>
+    
+    <h4>Foundation : May 2025</h4>
+    <em>Announced on 06th July 2025</em>
+    
+    <h4>Final : May 2025</h4>
+    <em>Announced on 06th July 2025</em>
+    
+    <h4>Intermediate Examination : May 2025</h4>
+    <em>Announced on 06th July 2025</em>
+    
+    <hr>
+    
+    <div class="disclaimer">
+        <strong>Hosted by National Informatics Centre</strong><br><br>
+        Disclaimer: The result given is correct at the time of release of the result by the Institute which accepts no responsibility thereafter for errors or omissions caused as a result of their transmission via the Internet or their downloading or printing by the user. No material from this web site can be copied, reproduced, published, uploaded, posted, transmitted or distributed or dealt with in any manner, unless expressly authorized. Users are not permitted to change, modify or prepare derivative works from the content of this site. For any clarifications / confirmation please address your enquiries to Joint Secretary (Examinations),The Institute of Chartered Accountants of India, 'ICAI BHAWAN', Post Box No. 7112, Indraprastha Marg, New Delhi - 110 002.
     </div>
 </body>
 </html>
