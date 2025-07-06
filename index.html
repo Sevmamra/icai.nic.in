@@ -4,108 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICAI Examination Results</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
         body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
+            background: url('assets/images/bg-home.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        
+        .exam-section {
+            margin: 25px 0;
         }
-        header {
-            text-align: center;
-            padding: 20px 0;
-            border-bottom: 2px solid #0066cc;
-        }
-        h1 {
-            color: #0066cc;
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-        h2 {
-            color: #0066cc;
-            font-size: 20px;
-            margin-top: 0;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background: #ddd;
-            margin: 20px 0;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
+        
         .section-title {
-            background-color: #0066cc;
+            background-color: #003366;
             color: white;
-            padding: 8px 15px;
+            padding: 10px 15px;
+            font-size: 18px;
             font-weight: bold;
-            margin-bottom: 15px;
             border-radius: 3px;
+            margin-bottom: 15px;
         }
+        
         .exam-item {
             margin-bottom: 15px;
-            padding-left: 15px;
-            border-left: 3px solid #0066cc;
+            padding: 10px;
+            border-left: 4px solid #003366;
+            background-color: rgba(255,255,255,0.7);
+            transition: all 0.3s ease;
         }
+        
+        .exam-item:hover {
+            background-color: rgba(255,255,255,0.9);
+            transform: translateX(5px);
+        }
+        
         .exam-name {
             font-weight: bold;
-            color: #0066cc;
+            color: #003366;
+            font-size: 16px;
         }
+        
         .exam-date {
             font-style: italic;
-            color: #666;
+            color: #555;
             font-size: 14px;
         }
-        footer {
-            margin-top: 30px;
-            padding-top: 15px;
-            border-top: 1px solid #ddd;
-            font-size: 12px;
-            color: #666;
-            text-align: center;
-        }
+        
         .disclaimer {
             font-size: 11px;
-            margin-top: 20px;
+            line-height: 1.4;
             color: #666;
-            text-align: justify;
-        }
-        /* Link styles */
-        a.exam-link {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            padding: 5px 0;
-        }
-        a.exam-link:hover {
-            background-color: #f0f8ff;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: rgba(255,255,255,0.8);
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
+        <div class="header">
+            <img src="assets/images/logo.png" alt="ICAI Logo" class="logo">
             <h1>The Institute of Chartered Accountants of India</h1>
             <h2>Examination Results</h2>
-        </header>
+        </div>
         
-        <hr>
-        
-        <div class="section">
+        <div class="exam-section">
             <div class="section-title">CHECK RESULTS</div>
             
             <a href="form.html" class="exam-link">
@@ -137,9 +101,7 @@
             </a>
         </div>
         
-        <hr>
-        
-        <div class="section">
+        <div class="exam-section">
             <div class="section-title">CHECK MERIT LIST</div>
             
             <a href="form.html" class="exam-link">
@@ -164,12 +126,10 @@
             </a>
         </div>
         
-        <footer>
+        <div class="disclaimer">
             <p><strong>Hosted by National Informatics Centre</strong></p>
-            <div class="disclaimer">
-                <p>Disclaimer: The result given is correct at the time of release of the result by the Institute which accepts no responsibility thereafter for errors or omissions caused as a result of their transmission via the Internet or their downloading or printing by the user. No material from this web site can be copied, reproduced, published, uploaded, posted, transmitted or distributed or dealt with in any manner, unless expressly authorized. Users are not permitted to change, modify or prepare derivative works from the content of this site. For any distribution / confirmation please address your enquiries to Joint Secretary (Examinations).The Institute of Chartered Accountants of India, "ICAI BHWNY", Port Bloq No. 7112, Indeprechina Marg, New Delhi - 110 002</p>
-            </div>
-        </footer>
+            <p>Disclaimer: The result given is correct at the time of release of the result by the Institute which accepts no responsibility thereafter for errors or omissions caused as a result of their transmission via the Internet or their downloading or printing by the user. No material from this web site can be copied, reproduced, published, uploaded, posted, transmitted or distributed or dealt with in any manner, unless expressly authorized. Users are not permitted to change, modify or prepare derivative works from the content of this site. For any distribution / confirmation please address your enquiries to Joint Secretary (Examinations). The Institute of Chartered Accountants of India, "ICAI BHWNY", Port Bloq No. 7112, Indeprechina Marg, New Delhi - 110 002</p>
+        </div>
     </div>
 </body>
 </html>
